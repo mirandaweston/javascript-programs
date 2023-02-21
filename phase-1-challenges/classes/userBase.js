@@ -19,9 +19,3 @@ class UserBase {
 };
 
 module.exports = UserBase;
-
-const users = [
-  new User('Uma'),
-  new User('Josh'),
-  new User('Ollie')
-];
