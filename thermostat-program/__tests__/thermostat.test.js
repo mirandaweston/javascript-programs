@@ -44,4 +44,18 @@ describe('up', () => {
     expect(thermostat.up()).toBe(24);
   });
   });
+
+  describe('down', () => {
+    it('decreases the temperature by 1 degree when temperature is higher than or equal to 10', () => {
+      const thermostat = new Thermostat();
+      thermostat.temperature = 11;
+      expect(thermostat.down()).toBe(10);
+    });
+    
+    it('returns the temperature when temperature is lower than 10', () => {
+      const thermostat = new Thermostat();
+      thermostat.temperature = 9;
+      expect(thermostat.down()).toBe(9);
+    });
+  });
 });

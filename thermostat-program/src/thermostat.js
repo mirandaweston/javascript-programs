@@ -20,6 +20,15 @@ class Thermostat {
     }
     return this.temperature;
   }
+
+  down() {
+    if (this.temperature >= 10) {
+      return this.temperature -= 1;
+    }
+    else {
+      return this.temperature
+    }
+  };
 }
 
 module.exports = Thermostat;
