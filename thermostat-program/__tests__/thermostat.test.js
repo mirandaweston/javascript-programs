@@ -58,4 +58,13 @@ describe('up', () => {
       expect(thermostat.down()).toBe(9);
     });
   });
+
+  describe('reset', () => {
+    it('resets temperature to 20', () => {
+      const thermostat = new Thermostat();
+      thermostat.temperature = 25;
+      thermostat.reset();
+      expect(thermostat.getTemperature()).toBe(20);
+    });
+  });
 });
