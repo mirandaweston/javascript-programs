@@ -12,4 +12,8 @@ describe('searchCandies', () => {
   it('returns "Skitties", "Skittles", and "Starburst" when search string is "Ma" and max price is 2', () => {
     expect(searchCandies('S', 10)).toEqual(['Skitties', 'Skittles', 'Starburst']);
   });
+
+  it('returns "Skitties" and "Skittles" when search string is "S" and max price is 4', () => {
+    expect(searchCandies('S', 4)).toEqual(['Skitties', 'Skittles']);
+  });
 });
