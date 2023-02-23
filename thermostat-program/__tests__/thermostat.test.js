@@ -67,4 +67,18 @@ describe('up', () => {
       expect(thermostat.getTemperature()).toBe(20);
     });
   });
+
+  describe('setPowerSavingMode', () => {
+    it('turns power saving mode on', () => {
+      const thermostat = new Thermostat();
+      thermostat.setPowerSavingMode(true);
+      expect(thermostat.powermode).toBe(true);
+    });
+    
+    it('turns power saving mode off', () => {
+      const thermostat = new Thermostat();
+      thermostat.setPowerSavingMode(false);
+      expect(thermostat.powermode).toBe(false);
+    });
+  });
 });
