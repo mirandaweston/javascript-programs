@@ -6,14 +6,14 @@
 - Using JavaScript in an application, including unit tests, multiple classes, and external dependencies on packages and remote APIs
 - Using functions as callbacks to handle asynchronous actions
 
-## fizzBuzz
+## fizzBuzz :boom:
 Test-driving and implementing a fizzBuzz function using Jest
 
-## searchCandies
+## searchCandies :candy:
 Test-driving and implementing a complex function seachCandies which takes two arguments (a search string and max price) to return only the _names_ of candies matching certain criteria
 
-## shoppingBasket
+## shoppingBasket :shopping_cart:
 Test-driving (using mocking) and implementing a shoppingBasket program made up of different classes
 
-## thermostat
+## thermostat :thermometer:
 Test-driving and implementing a program to manage a thermostat
